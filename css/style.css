@@ -1,0 +1,169 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Root Variables To Store The Colors */
+:root {
+  --BLACK: #333;
+  ---GREY: #dfdfdf;
+  --WHITE: rgb(253, 253, 253);
+  --ORANGE: rgb(243, 57, 0);
+}
+
+/* Global Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(---GREY);
+  position: relative;
+}
+
+/* Navbar Section Styling Starts Here */
+.nav-bar {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--BLACK);
+  color: var(---GREY);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+.brand-name {
+  letter-spacing: 2px;
+}
+
+.orange {
+  color: var(--ORANGE);
+}
+
+.nav-middle {
+  width: 30%;
+  height: 2rem;
+  display: flex;
+  align-items: middle;
+  gap: 0.3rem;
+  /* background-color: red; */
+}
+
+.nav-middle label {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 100%;
+  background-color: var(---GREY);
+  display: flex;
+  border-radius: 0.6rem;
+}
+
+.search input {
+  height: 100%;
+  flex: 8;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.search-button {
+  flex: 2;
+  color: var(--BLACK);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: var(--ORANGE);
+  color: var(---GREY);
+}
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-right li a {
+  text-decoration: none;
+  color: var(---GREY);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-right li a:hover {
+  color: var(--ORANGE);
+}
+/* Navbar Section Styling Ends Here */
+
+/* Hero Section Styling Starts Here */
+.hero {
+  padding: 2rem;
+  height: calc(100vh - 7rem);
+  overflow-y: scroll;
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  gap: 1.6rem;
+}
+
+.meal {
+  width: 15rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: center;
+  background-color: var(--WHITE);
+  box-shadow: 0px 0px 1px var(--BLACK);
+  color: var(--BLACK);
+}
+
+.meal-title {
+  font-size: 1rem;
+}
+
+.meal img {
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+.meal-id {
+  font-size: 1rem;
+}
+/* Hero Section Styling Ends Here */
+
+/* Footer Section Styling Starts Here */
+
+.footer {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--BLACK);
+  color: var(---GREY);
+  position: absolute;
+  top: 100%;
+}
+
+/* Footer Section Styling Starts Here */
